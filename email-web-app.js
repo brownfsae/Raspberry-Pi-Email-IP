@@ -15,9 +15,11 @@
 //     --- final URL should look something like this: https://script.google.com/macros/s/.../exec
 
 function doGet(e) {
-  var toAddress="YOUR-EMAIL-ADDRESS-HERE"; \\REPLACE WITH YOUR EMAIL
+  var toAddress="YOUR-EMAIL-ADDRESS-HERE"; //REPLACE WITH YOUR EMAIL
   var subjectLine="From your web app";
   var bodyText=JSON.stringify(e.parameters);
-  MailApp.sendEmail(toAddress, subjectLine, bodyText);
+  MailApp.sendEmail(toAddress, subjectLine, bodyText); 
   return ContentService.createTextOutput('Email sent with following body:\n'+bodyText)
 }
+
+// Note that emails sent to yourself using MailApp do not appear in your Gmail Inbox -- so check your Sent Folder, or use a mail alias.
