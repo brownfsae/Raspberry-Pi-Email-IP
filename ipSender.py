@@ -1,4 +1,4 @@
-mport subprocess # will use to call system command
+import subprocess # will use to call system command
 import re # will use regular expressions to find ip and physical address info
 import requests # will use to call HTTP GET for our email web app
 
