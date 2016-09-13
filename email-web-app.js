@@ -22,4 +22,4 @@ function doGet(e) {
   return ContentService.createTextOutput('Email sent with following body:\n'+bodyText)
 }
 
-// Note that emails sent to yourself using MailApp do not appear in your Gmail Inbox -- so check your Sent Folder, or use a mail alias.
+// Note that emails sent to yourself using MailApp may not appear in your Gmail Inbox -- so check your Sent Folder, or use a mail alias.
