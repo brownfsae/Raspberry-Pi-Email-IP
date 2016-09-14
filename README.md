@@ -43,12 +43,12 @@ Please note that **this assumes that you have already setup your RPi** with Raps
 5. Setup your script to run automatically using the `crontab` scheduler
   
   At the terminal line, input the following command: ```sudo crontab -e```
-  Select your preferred editor. **`nano` is a good option if you are new to Linux
+  Select your preferred editor. **Default [2] `nano` is a good option if you are new to Linux**
   Then, when the editor launches, add the following two lines to the bottom of your crontab:
 
     ```
-    @reboot /usr/bin/python /home/pi/lab1/ipSender.py
-    0 5 * * * /usr/bin/python /home/pi/lab1/ipSender.py
+    @reboot sudo /usr/bin/python /home/pi/lab1/ipSender.py
+    0 5 * * * sudo /usr/bin/python /home/pi/lab1/ipSender.py
     ```
       - This tells Linux to run the `ipSender.py` script every time it reboots and at 5am each day.
   
