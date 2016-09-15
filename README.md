@@ -47,8 +47,8 @@ Please note that **this assumes that you have already setup your RPi** with Raps
   3. Then, when the editor launches, add the following two lines to the bottom of your crontab:
 
     ```
-    @reboot sudo /usr/bin/python /home/pi/lab1/ipSender.py
-    0 5 * * * sudo /usr/bin/python /home/pi/lab1/ipSender.py
+    @reboot sudo sleep 10 && sudo /usr/bin/python /home/pi/lab1/ipSender.py >>/home/pi/lab1/ipSenderRebootLog.txt 2>&1
+    0 5 * * * sudo /usr/bin/python /home/pi/lab1/ipSender.py >>/home/pi/lab1/ipSenderDailyLog.txt 2>&1
     ```
       - This tells Linux to run the `ipSender.py` script every time it reboots and at 5am each day.
   
