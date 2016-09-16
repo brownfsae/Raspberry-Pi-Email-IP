@@ -37,7 +37,7 @@ Please note that **this assumes that you have already setup your RPi** with Raps
 
 4. Text the script with the following command:
 
-    ```python /home/pi/la1/ipSender.py```
+    ```python /home/pi/lab1/ipSender.py```
       - You should see a four line response that includes your MAC address, IPv4 address, and a note confirming that an email was sent.
 
 5. Setup your script to run automatically using the `crontab` scheduler
