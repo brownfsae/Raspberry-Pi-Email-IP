@@ -15,7 +15,7 @@ Please note that **this assumes that you have already setup your RPi** with Raps
     ```
     sudo apt-get update
     sudo apt-get dist-upgrade
-   ```
+    ```
   2.  Install git:
   
     ```
